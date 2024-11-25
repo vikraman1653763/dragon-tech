@@ -1,0 +1,74 @@
+/* Hero Section Container */
+.hero-container {
+    width: 99vw; /* Full width of the screen */
+    height: 80vh; /* Reduced height of the section */
+    background-size: 150% auto; /* Increase width size while reducing height */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-image: url('./../assets/banner2.webp'); /* Background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 50vw; /* Max width for the content */
+    padding: 2em; /* Padding for content spacing */
+    background: rgba(16, 9, 9, 0.499);  /*Semi-transparent overlay */
+   /* border: 0.1em solid #ffffff;  Subtle border */
+    border-radius: 0.5em;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title Styling */
+.hero-title {
+    font-size: var(--fs-xl);
+    margin-bottom: var(--banner-spacing);
+    font-weight: bold;
+    color: white;
+}
+
+/* Description Styling */
+.hero-description {
+    font-size: var(--fs-s);
+    color: var(--bg-pink);
+    line-height: 1.5;
+}
+
+/* Button Styling */
+.hero-button {
+    font-size: 1rem;
+    padding: 0.8em 2em; /* Spacing for the button */
+    color: #ffffff;
+    background-color: #008080; /* Teal color for retro vibes */
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #004d4d; /* Darker teal on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        max-width: 80vw; /* Increase width for smaller screens */
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+}

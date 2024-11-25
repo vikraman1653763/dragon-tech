@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="footer_1">
                     <div className="part-1">
                         <div className="img-bg">
-                            <img src="/assets/logo.webp" alt="Company" />
+                            <img src="/assets/dtLogo.webp" alt="Company" />
                         </div>
                         <p>Company Private Limited</p>
                     </div>
@@ -30,10 +30,10 @@ const Footer = () => {
                         <div className="part-23">
                             <h3>Product</h3>
                             <ul>
-                            <li><a href="/about">Product 1</a></li>
-                        <li><a href="/about">Product 2</a></li>
-                        <li><a href="/about">Product 3</a></li>
-                        <li><a href="/about">Product 4</a></li>
+                            <li><a href="/about">Email Solutions</a></li>
+                        <li><a href="/about">Servers & Storages</a></li>
+                        <li><a href="/about">Network Appliances</a></li>
+                        <li><a href="/about">Anti-Virus Solutions</a></li>
 
                             </ul>
                         </div>
@@ -41,7 +41,7 @@ const Footer = () => {
                     <div className="part-4">
                         <h3>Map Location</h3>
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2295.78367934344!2d80.24731394271232!3d12.979130820999675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d658fffffff%3A0xb8481002426a4879!2sUniversity%20of%20Madras%2C%20Taramani%20Campus!5e0!3m2!1sen!2sin!4v1732269280420!5m2!1sen!2sin"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.08271968421!2d80.18310697622177!3d13.09394387929062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526409d09c9d55%3A0xc1a8a858e27b9c6!2sGokul%20Nivas%2C%20extn2%2C%2069%2C%20Dr%20Rajendra%20Prasad%20St%2C%20Kumaran%20Nagar%20Extention%202%2C%20Kumaran%20Nagar%2C%20Sakthi%20Nagar%2C%20Padi%2C%20Chennai%2C%20Tamil%20Nadu%20600050!5e0!3m2!1sen!2sin!4v1732520310551!5m2!1sen!2sin"
                             width="100%"
                             height="200"
                             style={{ border: 0, aspectRatio: '16/9' }}
@@ -50,6 +50,7 @@ const Footer = () => {
                             referrerPolicy="no-referrer-when-downgrade"
                             title="Google Maps Location"
                         ></iframe>
+                    
                     </div>
                 </div>
                 <hr className="custom_hr" />

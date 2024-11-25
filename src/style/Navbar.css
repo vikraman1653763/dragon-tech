@@ -24,9 +24,7 @@
   .navbar-logo-image {
     height: 50px;
     width: auto;
-    filter: invert(1); /* Inverts black to white */
-    mix-blend-mode: screen; /* Blends white with red background */
-    background-color: red; /* Red overlay */
+    filter: invert(1); 
     display: inline-block;
   }
   

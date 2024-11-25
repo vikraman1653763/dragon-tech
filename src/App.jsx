@@ -7,11 +7,12 @@ import Product from "./components/Product.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 import Navbar from "./components/Navbar.jsx";
-import './app.css';
+import './style/app.css';
 const App = () => {
   return (
     <Router>
       <Navbar/>
+      <div className='main'>
       <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/about' element={<About/>}/>
@@ -19,6 +20,7 @@ const App = () => {
       <Route path='/product' element={<Product/>}/>
       <Route path='/contact' element={<Contact/>}/>
       </Routes>
+      </div>
       <Footer/>
     </Router>
   );

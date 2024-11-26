@@ -8,6 +8,8 @@ import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 import Navbar from "./components/Navbar.jsx";
 import ScrollToTop from './components/ScrollToTop.jsx';
+import './style/App.css';
+
 const App = () => {
   return (
     <Router>

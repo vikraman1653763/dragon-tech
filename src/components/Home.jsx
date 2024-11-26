@@ -1,6 +1,5 @@
 import React from 'react'
 import '../style/home.css';
-import '../style/app.css';
 
 import Section1 from './home/Section1';
 import Section4 from './home/Section4';

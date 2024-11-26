@@ -10,7 +10,7 @@ function Product() {
         <>
             <Banner 
         heading="Our Products" 
-        description="Discover our cutting-edge IT products built to meet your business's unique requirements." 
+        description="Your one-stop destination for IT rentals and sales, from laptops to networking solutions – Dragon Techsolutions has you covered!" 
       />
            <Section2/>
         </>

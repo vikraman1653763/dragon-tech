@@ -57,7 +57,7 @@ Telegana.
         <h4>BENGALURU</h4>
         <p>No.39, 7th Cross, Naidu Layout,
 Knankunte Cross, Vasanthapura Main
-Road, Bangaluru Urban,
+Road, Bengaluru Urban,
 Karnataka.
 560062
 </p>

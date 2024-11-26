@@ -1,5 +1,4 @@
 import React from 'react';
-import HeroSection from './about/HeroSection.jsx';
 import AboutUs from './about/AboutUs.jsx';
 import Vision from './about/Vision.jsx';
 import Mission from './about/Mission.jsx';

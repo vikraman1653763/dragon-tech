@@ -39,14 +39,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* 
 @font-face {
   font-family: 'hanken';
   src: url('/assets/HankenGrotesk.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 html {
   scrollbar-width: thin;

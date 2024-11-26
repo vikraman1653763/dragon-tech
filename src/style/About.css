@@ -6,7 +6,6 @@
     padding: 2em;
     color: #000;
     flex-wrap: wrap; /* Makes it responsive */
-    font-family: "hanken", sans-serif;
   }
   
   .about-us-content {

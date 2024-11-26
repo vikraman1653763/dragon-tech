@@ -1,11 +1,5 @@
 
-body {
-    background-color: var(--bg-light);
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: var(--pcol);
-}
+
 
 .contact-sec-3 {
     background-color: var(--bg-light);
@@ -105,7 +99,7 @@ body {
 
 .img-com-to-xyz-a {
     flex: 1;
-    background-image: url(/assets/sample2.png);
+    background-image: url(/assets/sample2.webp);
     background-position: center;
     background-size: contain;
     border-radius: 0.5rem;
@@ -266,6 +260,7 @@ height: 5em;
     flex-direction: column;
     justify-content: center;
     gap: 48px;
+
 }
 
 
@@ -278,6 +273,7 @@ height: 5em;
     justify-content: space-between;
     gap: 30px;
     margin-top: 25px;
+    padding: 1em;
     
 }
 

@@ -1,13 +1,18 @@
 import React from 'react';
 import HeroSection from './product/HeroSection.jsx';
 import Section2 from './product/Section2.jsx';
+import '../style/product.css';
+import Banner from "./Banner";
+
 function Product() {
 
     return (
         <>
-            <HeroSection />
-           
-            <Section2/>
+            <Banner 
+        heading="Our Products" 
+        description="Discover our cutting-edge IT products built to meet your business's unique requirements." 
+      />
+           <Section2/>
         </>
     );
 }

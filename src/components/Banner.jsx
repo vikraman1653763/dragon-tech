@@ -1,20 +1,16 @@
-import React from 'react';
+import React from "react";
+import "../style/banner.css";
 
-import'../style/banner.css';
-
-const Banner = () => {
-
-   
+const Banner = ({ heading, description }) => {
   return (
     <section className="banner">
-      <img src="/assets/banner3.webp" alt="banner" />
+      <img src="/assets/banner5.webp" alt="Page Banner" />
       <div className="image-text">
-        <h3>Your One-Stop IT Solutions and Products</h3>
-        <p>Innovative solutions for all your IT needs. From infrastructure to security, we’ve got you covered.</p>
+        <h3>{heading}</h3>
+        <p>{description}</p>
       </div>
     </section>
   );
 };
 
 export default Banner;
-

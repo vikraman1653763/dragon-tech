@@ -1,0 +1,239 @@
+.section-container {
+    margin: 2em 0;
+    padding: 1em;
+  }
+  
+
+  .section-container:nth-child(even){
+    background-color: var(--bg-white);
+    margin: 0%;
+
+  }
+  .section-container:nth-child(even) .card-container{
+    background-color: var(--bg-light);
+  }
+  .product-section-title{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .product-section-title div{
+    /* border: 1px solid var(--bg-dblue); */
+    height: 80%;
+    width: 50%;
+    background-color:var(--bg-light);
+    color: white !important;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  }
+  .section-title {
+    font-size: var(--fs-xl);
+    color: #444;
+    text-align: center;
+  }
+  .section-main-title {
+    font-size: var(--fs-xxl);
+    text-align: center;
+  }
+  
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center-align the cards */
+    gap: 2em; /* Space between cards */
+  }
+  .section-description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* card  */
+
+  /* General Card Styling */
+.card-container {
+  width: 20vw; /* Fixed width for larger screens */
+  height: 35vh; /* Fixed height */
+  background-color: #ffffff;
+  border: 0.1em solid #ddd;
+  border-radius: 0.5em;
+  overflow: hidden;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: space-around;
+}
+
+.card-container:hover {
+  transform: translateY(-0.5em);
+  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.15);
+
+}
+
+/* Image Styling */
+.card-image {
+  width: 100%;
+  height: 50%; /* Half of the card height */
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+/* Content Styling */
+.card-content {
+  padding: 1em;
+  text-align: left;
+  height: 50%; /* Remaining half of the card height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* Centers the content horizontally */
+}
+
+/* Title Styling */
+.card-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5em;
+  text-align: center; /* Centers the title inside the card */
+  width: 100%; /* Ensures the title spans the full width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Description Styling */
+.card-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+/* Bullet List Styling */
+.card-bullet-list {
+  list-style: disc;
+  padding-left: 1.5em;
+  margin: 0;
+  color: #333;
+}
+
+.card-bullet-item {
+  margin-bottom: 0.5em;
+  font-size: 0.9rem;
+}
+
+/* Card Grid Styling */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  justify-content: space-evenly; /* Evenly space the cards */
+  gap: 2em; /* Space between the cards */
+  padding: 2em;
+}
+
+/* Responsive Adjustments for Small Devices */
+@media (max-width: 768px) {
+  .card-container {
+    width: 40vw; /* Adjust card width to be larger on smaller screens */
+    height: auto; /* Allow card height to adjust automatically */
+  }
+
+  /* Ensure card grid displays in a column on smaller screens */
+  .card-grid {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards horizontally */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    width: 80vw; /* Make cards take more width on very small screens */
+    height: auto; /* Let cards expand to content height */
+  }
+}
+
+/* hero section  */
+
+/* Hero Section Container */
+.hero-container {
+  width: 100vw; 
+  height: 80vh; 
+  background-size: 150% auto; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+/* Hero Content */
+.hero-content {
+  max-width: 50vw; 
+  padding: 2em; 
+  background: rgba(16, 9, 9, 0.499);  
+  border-radius: 0.5em;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title Styling */
+.hero-title {
+  font-size: var(--fs-xl);
+  margin-bottom: var(--banner-spacing);
+  font-weight: bold;
+  color: white;
+}
+
+/* Description Styling */
+.hero-description {
+  font-size: var(--fs-s);
+  color: var(--bg-pink);
+  line-height: 1.5;
+}
+
+/* Button Styling */
+.hero-button {
+  font-size: 1rem;
+  padding: 0.8em 2em;
+  color: #ffffff;
+  background-color: #008080; 
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #004d4d; 
+}
+
+
+@media (max-width: 768px) {
+  .hero-content {
+      max-width: 80vw; 
+  }
+
+  .hero-title {
+      font-size: 2rem;
+  }
+
+  .hero-description {
+      font-size: 1rem;
+  }
+}

@@ -8,6 +8,7 @@ import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 import Navbar from "./components/Navbar.jsx";
 import './style/app.css';
+import ScrollToTop from './components/ScrollToTop.jsx';
 const App = () => {
   return (
     <Router>
@@ -22,6 +23,7 @@ const App = () => {
       </Routes>
       </div>
       <Footer/>
+      <ScrollToTop/>
     </Router>
   );
 };

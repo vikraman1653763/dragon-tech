@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Banner = () => {
+const Section1 = () => {
   return (
     <section className="banner">
       <img src="/assets/banner5.webp" alt="Contact Us Banner" />
@@ -14,4 +14,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default Section1;

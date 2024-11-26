@@ -54,7 +54,7 @@ Telegana.
         <div className="contact_form-right_img-div">
           <img src="/assets/pin.svg" alt="Pin Icon" />
         </div>
-        <h4>BANGALURU</h4>
+        <h4>BENGALURU</h4>
         <p>No.39, 7th Cross, Naidu Layout,
 Knankunte Cross, Vasanthapura Main
 Road, Bangaluru Urban,

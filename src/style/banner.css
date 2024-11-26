@@ -5,13 +5,13 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    width: 99vw; /* Full width of the screen */
+    width: 100vw; /* Full width of the screen */
     height: 80vh; /* Reduced height of the section */
     background-size: 150% auto; /* Increase width size while reducing height */
     background-position: center; 
     background-repeat: no-repeat; 
   }
-  
+    
   .banner img {
     width: 100%;
     height: 100%;

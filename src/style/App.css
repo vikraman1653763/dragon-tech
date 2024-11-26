@@ -21,14 +21,14 @@
   --fs-xxl: 4rem;  
   --fs-xxxl: 8rem; 
 
-  --pcol: #1a1a1a; /* Primary color */
-  --scol: #000;    /* Secondary color */
-  --bg-light: #d9eeee; /* Body background */
-  --bg-white: #ffffff; /* Card background */
-  --border: #ddd;     /* Border color */
-  --input-border: #908f8f; /* Input border color */
-  --btn-hover: #0056b3; /* Button hover */
-  --btn-color: #d9eeee; /* Button */
+  --pcol: #1a1a1a;
+  --scol: #000;
+  --bg-light: #d9eeee;
+  --bg-white: #ffffff; 
+  --border: #ddd;
+  --input-border: #908f8f;
+  --btn-hover: #0056b3; 
+  --btn-color: #d9eeee; 
   --bg-pink:#f3ebe2;
   --bg-black:#1e1d1d;
   --bg-dblue:#10747c;
@@ -68,6 +68,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1 {

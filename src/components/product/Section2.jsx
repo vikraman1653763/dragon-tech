@@ -15,7 +15,7 @@ import Servers from '/assets/server2.webp';
 import Storage from '/assets/datastorage.webp';
 import Desktop from '/assets/desktop.webp';
 import Laptop from '/assets/laptopss.webp';
-import Switches from '/assets/switch.webp';
+import Switches from '/assets/switches.webp';
 import Gamepc from '/assets/gamepc.webp';
 import Accesspt from '/assets/accespoint.webp';
 import Firewall from '/assets/firewall.webp';
@@ -108,11 +108,11 @@ function Solutions() {
       {/* Sales Section */}
       <div className="main-section">
         <div className="product-section-title">
-      <div>
-        <img src={sales}/>
-        <h1 className="section-main-title">Sales</h1>
-        <p className="section-description">Our wide range of IT products ensures your business is equipped with the best technology.</p>
-      </div>
+          <div>
+            <img src={sales} className="section-img"/>
+            <h1 className="section-main-title">Sales</h1>
+            <p className="section-description">Our wide range of IT products ensures your business is equipped with the best technology.</p>
+          </div>
         </div>
         {salesSections.map((section, index) => (
           <Section 
@@ -129,7 +129,7 @@ function Solutions() {
       <div className="product-section-title">
 
 <div>
-<img src={system}/>
+<img src={system} className="section-img"/>
 
         <h1 className="section-main-title">Rental</h1>
         <p className="section-description">From servers to tablets, we offer rental solutions tailored to your operational demands.</p>

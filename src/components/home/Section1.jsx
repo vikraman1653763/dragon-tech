@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const variants = {
@@ -6,24 +6,24 @@ const variants = {
     x: direction > 0 ? "100vw" : "-100vw",
     opacity: 1,
     transition: {
-      x: { ease: "linear", duration: .3 }, // Smooth ease-in for initial state
-      opacity: { duration: .3 },
+      x: { ease: "linear", duration: 0.3 },
+      opacity: { duration: 0.3 },
     },
   }),
   center: {
     x: 0,
     opacity: 1,
     transition: {
-      x: { ease: "linear", duration: .3 }, // Linear for center state
-      opacity: { duration: .3 },
+      x: { ease: "linear", duration: 0.3 },
+      opacity: { duration: 0.3 },
     },
   },
   exit: (direction) => ({
     x: direction < 0 ? "100vw" : "-100vw",
     opacity: 1,
     transition: {
-      x: { ease: "linear", duration: .3 }, // Smooth ease-out for exiting state
-      opacity: { duration: .3 },
+      x: { ease: "linear", duration: 0.3 },
+      opacity: { duration: 0.3 },
     },
   }),
 };
@@ -41,19 +41,19 @@ const Section1 = () => {
     {
       title: "Innovation Meets Expertise in IT Management",
       content:
-        "Operating from Chennai, Hyderabad, and Bangalore, we provide comprehensive IT support that keeps your business operations uninterrupted, efficient, and future-ready",
+        "Operating from Chennai, Hyderabad, and Bangalore, we provide comprehensive IT support that keeps your business operations uninterrupted, efficient, and future-ready.",
       image: "/assets/card3.webp",
     },
     {
       title: "Seamless IT Integration for Every Industry",
       content:
-        "From virtualization to cloud solutions, our in-house experts ensure your IT environment is reliable, scalable, and secure. Stay ahead in the knowledge revolution with Dragon Techsolutions",
+        "From virtualization to cloud solutions, our in-house experts ensure your IT environment is reliable, scalable, and secure. Stay ahead in the knowledge revolution with Dragon Techsolutions.",
       image: "/assets/card2.webp",
     },
     {
       title: "Empowering Your Business with Tailored IT Solutions",
       content:
-        "With over a decade of excellence, Dragon Techsolutions specializes in delivering cutting-edge IT services, from infrastructure management to advanced cybersecurity. Your growth is our mission",
+        "With over a decade of excellence, Dragon Techsolutions specializes in delivering cutting-edge IT services, from infrastructure management to advanced cybersecurity. Your growth is our mission.",
       image: "/assets/card1.webp",
     },
   ];
@@ -64,13 +64,15 @@ const Section1 = () => {
     setDirection(newDirection);
     setPage(page + newDirection);
   };
+
   useEffect(() => {
     const interval = setInterval(() => {
-      paginate(1); 
+      paginate(1);
     }, 5000);
 
     return () => clearInterval(interval);
   }, [page]);
+
   return (
     <div className="carousel-container">
       <button className="prev-btn" onClick={() => paginate(-1)}>

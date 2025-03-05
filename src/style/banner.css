@@ -1,50 +1,96 @@
 .banner {
-    position: relative;
-   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    width: 100vw; /* Full width of the screen */
-    height: 80vh; /* Reduced height of the section */
-    background-size: 150% auto; /* Increase width size while reducing height */
-    background-position: center; 
-    background-repeat: no-repeat; 
-  }
-    
-  .banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
+  position: relative;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100vw; /* Full width of the screen */
+  height: 80vh; /* Reduced height of the section */
+  background-size: 150% auto; /* Increase width size while reducing height */
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
   
-  .banner .image-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: var(--bg-light);
-    padding: 1em;
-    background-color: rgba(0, 0, 0, 0.13);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(2px); /* Apply a blur effect */
-    -webkit-backdrop-filter: blur(2px); /* Safari support */
-  }
-  
-  
-  .banner .image-text h3 {
-    font-size: var(--fs-xl);
-    margin-bottom: var(--banner-spacing);
-    font-weight: bold;
-    color: white;
-   
-  }
-  
-  .banner .image-text p {
-    font-size: var(--fs-s);
-    color: var(--bg-pink);
-    line-height: 1.5;
-  }
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.banner .image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--bg-light);
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  -webkit-backdrop-filter: blur(2px); /* Safari support */
+}
+
+
+.banner .image-text h3 {
+  font-size: var(--fs-xl);
+  margin-bottom: var(--banner-spacing);
+  font-weight: bold;
+  color: white;
+ 
+}
+
+.banner .image-text p {
+  font-size: var(--fs-s);
+  color: var(--bg-pink);
+  line-height: 1.5;
+}
+/* Tablet View: 768px - 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.banner {
+  width: 100vw; /* Full width of the screen */
+  height: 50vh; /* Adjust height for tablets */
+  background-size: 120% auto; /* Slightly adjust background size */
+}
+.banner img {
+  width: 100vw;
+  height: 100%;
+}
+.banner .image-text {
+  padding: 1em; /* Adjust padding for better spacing */
+  width: 60%; /* Make the image text container a bit narrower */
+}
+
+.banner .image-text h3 {
+  font-size: var(--fs-xl); /* Adjust heading font size for tablets */
+}
+
+.banner .image-text p {
+  font-size: var(--fs-m); /* Adjust description font size for tablets */
+}
+}
+/* Mobile View: Max-width 768px */
+@media screen and (max-width: 768px) {
+.banner {
+  width: 100vw;
+  height: 35vh; /* Reduce height for smaller mobile/tablets */
+  background-size: 150% auto; /* Adjust background size for better appearance */
+}
+
+.banner .image-text {
+  padding: 0.8em; /* Reduce padding slightly for mobile */
+  width: 80%; /* Make image text slightly narrower for mobile */
+}
+
+.banner .image-text h3 {
+  font-size: var(--fs-m); /* Adjust font size of heading */
+  margin-bottom: var(--banner-spacing);
+}
+
+.banner .image-text p {
+  font-size: var(--fs-xs); /* Adjust font size for description */
+}
+}

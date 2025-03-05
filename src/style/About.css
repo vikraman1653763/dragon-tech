@@ -1,202 +1,398 @@
 .about-us-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2em;
-    color: #000;
-    flex-wrap: wrap; /* Makes it responsive */
-  }
-  
-  .about-us-content {
-    flex: 1;
-    max-width: 50%;
-    padding-right: 2em;
-    margin-left: 20px;
-  }
-  
-  .about-us-heading {
-    font-size: var(--fs-xl);
-    font-weight: bold;
-    margin-bottom: 1em;
-    color: #0e747b;
-    position: relative;
-  }
-  .about-us-heading img{
-    object-fit: contain;
-    width: 3em;
-    position: absolute;
-    top: -50%;
-    right:50%;
-  }
-  .about-us-description {
-    font-size: var(--fs-s);
-    line-height: 1.5;
-    letter-spacing: 1px;
-  }
-  
-  .about-us-image {
-    flex: 1;
-    max-width: 40%;
-    text-align: center;
-    margin-right: 20px;
-  }
-  
-  .about-us-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 3em; /* Optional for rounded corners */
-    object-fit: cover;
-  }
-  
-  @media (max-width: 768px) {
-    .about-us-container {
-      flex-direction: column;
-    }
-  
-    .about-us-content, .about-us-image {
-      max-width: 100%;
-      padding: 0;
-    }
-  
-    .about-us-image img {
-      margin-top: 1em;
-    }
-  }
-  
-  /* mission */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  color: #000;
+  flex-wrap: wrap; /* Makes it responsive */
+}
 
-  .mission-section {
-    background-color: #daeeef;
-    padding: 2em;
-    text-align: center;
-    overflow: hidden;
-  }
-  
-  .mission-heading {
-    font-size: 2rem;
-    color: black;
-    margin-bottom: 1.5em;
-    font-weight: bold;
-  }
-  
-  .mission-cards {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1em;
-    flex-wrap: wrap;
-  }
-  
-  .mission-card {
-    background-color: var(--bg-white);
-    border-radius: 10px;
-    padding: 1.5em;
-    flex: 1;
-    min-width: 250px;
-    max-width: 300px;
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
-    color: var(--bg-black);
-    text-align: left;
-    transition: transform 0.3s ease-in-out;
+.about-us-content {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 2em;
+  margin-left: 20px;
+}
 
-  }
-  .mission-card:hover{
-    transform: translateY(-10px);
-  }
-  
-  .mission-card h3 {
-    font-size: var(--fs-l);
-    color: var(--bg-dblue);
-    margin-bottom: 0.5em;
-  }
-  
-  .mission-card h4 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-    color: var(--bg-black);
-  }
-  
-  .mission-card p {
-    font-size: 0.95rem;
-    color: var(--bg-black);
-    line-height: 1.5;
-  }
-  
-  @media (max-width: 768px) {
-    .mission-cards {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .mission-card {
-      max-width: 90%;
-      margin-bottom: 1em;
-    }
-  }
-  
+.about-us-heading {
+  font-size: var(--fs-xl);
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: #0e747b;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5em; /* Adds space between text and logo */
+  flex-wrap: nowrap; /* Keep them in a single line by default */
+}
+.about-us-heading img{
+  object-fit: contain;
+  width: 3em;
+  position: absolute;
+  top: -20%;
+  right:50%;
+}
+.about-us-description {
+  font-size: var(--fs-s);
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: center;
+}
 
-  /* vision  */
+.about-us-image {
+  flex: 1;
+  max-width: 40%;
+  text-align: center;
+  margin-right: 20px;
+}
 
-  .vision-section {
-    background-color: #ffffff;
-    padding: 2em;
-    text-align: center;
-  }
+.about-us-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 3em; /* Optional for rounded corners */
+  object-fit: cover;
+}
+
+/* Tablet: 768px to 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.about-us-container {
+  flex-direction: row; /* Side-by-side layout */
+  padding: 10px;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.about-us-content,
+.about-us-image {
+  flex: 1;
+  max-width: 45%; /* Balanced proportion between text and image */
+  padding: 0;
+}
+
+.about-us-heading {
+  font-size: 2rem;
+}
+.about-us-heading img{
+  right: 0%;
+}
+.about-us-description {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.about-us-image img {
+  max-width: 100%;
+  border-radius: 2em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+}
+
+/* Mobile: max-width 768px */
+@media screen and (max-width: 767px) {
+.about-us-container {
+  flex-direction: column;
+  width: 100vw;
+  padding: 5px;
+  margin-left: 0;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-us-content,
+.about-us-image {
+  max-width: 80%;
+  padding: 0;
+}
+
+.about-us-heading {
+  font-size: 1.8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack the text and logo vertically */
+  align-items: center; /* Center-align the text and logo */
+  gap: 0.9em; /* Add spacing between title and logo */
+  margin-bottom: 50px;
+
+}
+
+.about-us-heading img {
+  /* display: none; */
+  top:80%;
+  right:38%;
+}
+
+.about-us-description {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.about-us-image img {
+  margin-top: 1em;
+  width: 70%; /* Image adjusts with screen */
+  border-radius: 1em;
+  overflow: hidden;
+}
+}
+
+/* Mission Section */
+/* mission */
+
+.mission-section {
+  background-color: #daeeef;
+  padding: 2em;
+  text-align: center;
+  overflow: hidden;
+}
+
+.mission-heading {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
+
+.mission-cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.mission-card {
+  background-color: var(--bg-white);
+  border-radius:  50px 15px;
+  padding: 1.5em;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  color: var(--bg-black);
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+
+}
+.mission-card:hover{
+  transform: translateY(-10px);
+}
+
+.mission-card h3 {
+  font-size: var(--fs-l);
+  color: var(--bg-dblue);
+  margin-bottom: 0.5em;
+}
+
+.mission-card h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: var(--bg-black);
+}
+
+.mission-card p {
+  font-size: 0.95rem;
+  color: var(--bg-black);
+  line-height: 1.5;
+}
+
+/* Tablet: min-width 768px to max-width 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.mission-section {
+  padding: 2em 1em;
+  width: 100vw;
+}
+
+.mission-heading {
+  font-size: 1.8rem;
+}
+
+.mission-cards {
+  justify-content: center;
+  gap: 1.5em;
+  width: 95%;
+}
+
+.mission-card {
+  flex: 1;
+  min-width: 220px;
+  max-width: 280px;
+  padding: 1.2em;
+  margin-bottom: 1em;
+}
+
+.mission-card h3 {
+  font-size: 1.5rem;
+}
+
+.mission-card p {
+  font-size: 1rem;
+}
+}
+
+/* Mobile: max-width 767px */
+@media screen and (max-width: 767px) {
+.mission-section {
+  padding: 0.3em;
+  width:100vw;
+  align-items: center;
+}
+
+.mission-heading {
+  font-size: 1.6rem;
+}
+
+.mission-cards {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 90%;
+  margin: 5px auto;
+}
+
+.mission-card {
+  width: 90%;
+  padding: 1em;
+  max-width: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission-card h3 {
+  font-size: 1.4rem;
+}
+
+.mission-card p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+}
+
+
+/* vision  */
+
+.vision-section {
+  background-color: #ffffff;
+  padding: 2em;
+  text-align: center;
+}
+
+.vision-heading {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
+
+.vision-cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.vision-card {
+  background-color: #daeeef;
+  border-radius: 15px 50px;
   
-  .vision-heading {
-    font-size: 2rem;
-    color: black;
-    margin-bottom: 1.5em;
-    font-weight: bold;
-  }
-  
-  .vision-cards {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1em;
-    flex-wrap: wrap;
-  }
-  
-  .vision-card {
-    background-color: #daeeef;
-    border-radius: 10px;
-    padding: 1.5em;
-    flex: 1;
-    min-width: 250px;
-    max-width: 300px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
-  }
-  
-  .vision-card h3 {
-    font-size: 1.5rem;
-    color: #0e747b;
-    margin-bottom: 0.5em;
-  }
-  
-  .vision-card h4 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #0e747b;
-    margin-bottom: 0.5em;
-  }
-  
-  .vision-card p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #333;
-  }
-  
-  @media (max-width: 768px) {
-    .vision-cards {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .vision-card {
-      max-width: 90%;
-      margin-bottom: 1em;
-    }
-  }
-  
+  padding: 1.5em;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.vision-card h3 {
+  font-size: 1.5rem;
+  color: #0e747b;
+  margin-bottom: 0.5em;
+}
+
+.vision-card h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0e747b;
+  margin-bottom: 0.5em;
+}
+
+.vision-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+}
+/* Tablet: min-width 768px to max-width 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.vision-section {
+  padding: 2em 1em;
+  width: 100vw;
+}
+
+.vision-heading {
+  font-size: 1.8rem;
+}
+
+.vision-cards {
+  justify-content: center;
+  gap: 1.5em;
+  width: 95%;
+}
+
+.vision-card {
+  flex: 1;
+  min-width: 220px;
+  max-width: 280px;
+  padding: 1.2em;
+  margin-bottom: 1em;
+}
+
+.vision-card h3 {
+  font-size: 1.5rem;
+}
+
+.vision-card p {
+  font-size: 1rem;
+}
+}
+
+/* Mobile: max-width 767px */
+@media screen and (max-width: 767px) {
+.vision-section {
+  padding: 0.3em;
+  width:100vw;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.vision-heading {
+  font-size: 1.6rem;
+}
+
+.vision-cards {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.vision-card {
+  width: 90%;
+  padding: 1em;
+  max-width: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.vision-card h3 {
+  font-size: 1.4rem;
+}
+
+.vision-card p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+}

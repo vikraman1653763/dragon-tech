@@ -5,12 +5,12 @@ import 'aos/dist/aos.css';
 const enquiryData = [
     {
       "title": "IT Consulting",
-      "description": "For expert advice on IT infrastructure, project management, and technology solutions tailored to your business needs, contact our IT Consulting team at info@dragontechsolutions.com or call us at 044 42108304",
+      "description": "For expert advice on IT infrastructure, project management, and technology solutions tailored to your business needs, contact our IT Consulting team at info@dragontechsolutions.com or call us at 044 42108304.",
       "image": "/assets/handshake.svg"
     },
     {
       "title": "Technical Support",
-      "description": "Need assistance with your IT systems? Our technical support team is available 24/7 to troubleshoot and resolve your issues. Reach us at info@dragontechsolutions.com or call +91 9751074995 .",
+      "description": "Need assistance with your IT systems? Our technical support team is available 24/7 to troubleshoot and resolve your issues. Reach us at info@dragontechsolutions.com or call +91 9751074995.",
       "image": "/assets/support.svg"
     },
     {

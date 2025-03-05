@@ -1,6 +1,6 @@
 import React from 'react'
 import Section3 from './contact/Section3.jsx';
-import Section1 from './contact/Section1.jsx';
+// import Section1 from './contact/Section1.jsx';
 import '../style/service.css';
 import Section2 from './contact/Section2.jsx';
 import Section4 from './contact/Section4.jsx';

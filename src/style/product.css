@@ -141,99 +141,263 @@
   padding: 2em;
 }
 
-/* Responsive Adjustments for Small Devices */
-@media (max-width: 768px) {
-  .card-container {
-    width: 40vw; /* Adjust card width to be larger on smaller screens */
-    height: auto; /* Allow card height to adjust automatically */
-  }
-
-  /* Ensure card grid displays in a column on smaller screens */
+/* For tablet view: min-width: 768px and max-width: 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .card-grid {
-    display: flex;
-    flex-direction: column; /* Stack cards vertically */
-    align-items: center; /* Center cards horizontally */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    gap: 2em;
+    padding: 2em;
   }
-}
-
-@media (max-width: 480px) {
+  .card-title {
+    font-size: 1.4rem;
+  }
   .card-container {
-    width: 80vw; /* Make cards take more width on very small screens */
-    height: auto; /* Let cards expand to content height */
+    width:90%; /* Adjust card width for tablet */
+    height: 80%;
+  }
+  .section-title,
+  .section-main-title {
+    font-size: var(--fs-l); /* Adjust font sizes */
   }
 }
 
-/* hero section  */
+/* For mobile view: min-width: 425px and max-width: 767px */
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .product-section-title div{
+    height: 60%;
+    width: 80%;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    gap: 1.5em;
+    padding: 1.8em;
+  }
+  .card-container {
+    width: auto; /* Adjust card width for mobile */
+    height: auto;
+  }
+  .card-title {
+    font-size: 1.3rem;
+  }
+  .section-title,
+  .section-main-title {
+    font-size: var(--fs-m); /* Adjust font sizes */
+  }
+}
 
-/* Hero Section Container */
-.hero-container {
-  width: 100vw; 
-  height: 80vh; 
-  background-size: 150% auto; 
-  background-position: center; 
-  background-repeat: no-repeat; 
+/* For small mobile view: min-width: 325px and max-width: 424px */
+@media screen and (min-width: 320px) and (max-width: 424px) {
+  .product-section-title div{
+    height: 60%;
+    width: 80%;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* One card per row */
+    gap: 1.2em;
+    padding: 1.5em;
+    justify-content: center;
+  }
+  .card-container {
+    width: 90%; /* Slightly smaller card width */
+    height: 80%;
+  }
+  .card-title {
+    font-size: 1.2rem;
+  }
+  .section-title{
+    font-size: var(--fs-m);
+  }
+  .section-main-title {
+    font-size: var(--fs-s); /* Adjust font sizes for small screens */
+  }
+}
+
+/* section3 */
+.sec-3-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  position: relative;
+  padding: 2rem;
+
 }
 
-/* Hero Content */
-.hero-content {
-  max-width: 50vw; 
-  padding: 2em; 
-  background: rgba(16, 9, 9, 0.499);  
-  border-radius: 0.5em;
-  height: 50%;
+.sec-3-content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
 }
 
-/* Title Styling */
-.hero-title {
-  font-size: var(--fs-xl);
-  margin-bottom: var(--banner-spacing);
-  font-weight: bold;
-  color: white;
+.sec-3-text {
+  flex: 1;
 }
 
-/* Description Styling */
-.hero-description {
+.sec-3-title {
+  font-size: 3.3rem;
+  color: var(--bg-dblue);
+  margin-bottom: 1rem;
+  z-index: 5;
+
+}
+
+.sec-3-description {
   font-size: var(--fs-s);
-  color: var(--bg-pink);
-  line-height: 1.5;
+  color: #555;
+  margin-bottom: 1rem;
 }
-
-/* Button Styling */
-.hero-button {
-  font-size: 1rem;
-  padding: 0.8em 2em;
-  color: #ffffff;
-  background-color: #008080; 
+.sec-3-button {
+  background-color: var(--bg-dblue);
+  color: white;
   border: none;
-  border-radius: 0.3em;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.hero-button:hover {
-  background-color: #004d4d; 
+.sec-3-button:hover {
+  background-color: var(--bg-white);
+  color: var(--bg-dblue);
 }
 
+.sec-3-imgcontainer {
+  flex: 1;
+  text-align: center;
+}
 
-@media (max-width: 768px) {
-  .hero-content {
-      max-width: 80vw; 
-  }
+.sec-3-img {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Section 3 - Tablet View (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.sec-3-container {
+  padding: 1rem;
+  width: 100vw;
+  overflow: hidden;
+}
 
-  .hero-title {
-      font-size: 2rem;
-  }
+.sec-3-content {
+  display: flex;
+  flex-direction: row; /* Keep content side by side like desktop */
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 90%;
+  gap: 2rem; /* Space between sections */
+}
 
-  .hero-description {
-      font-size: 1rem;
-  }
+.sec-3-text {
+  flex: 1;
+}
+
+.sec-3-title {
+  font-size: 2rem; /* Adjust title size */
+  color: var(--bg-dblue);
+  margin-bottom: 1rem;
+}
+
+.sec-3-description {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.sec-3-button {
+  background-color: var(--bg-dblue);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sec-3-button:hover {
+  background-color: var(--bg-white);
+  color: var(--bg-dblue);
+}
+
+.sec-3-imgcontainer {
+  flex: 1;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* .sec-3-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 150px;
+} */
+}
+
+/* Section 3 - Mobile View (max-width: 768px) */
+@media screen and (max-width: 767px) {
+.sec-3-container {
+  padding: 1rem;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.sec-3-content {
+  flex-direction: column; /* Stack content vertically for mobile */
+  gap: 1.5rem; /* Space between sections */
+  width: 100%;
+}
+
+/* Title */
+.sec-3-title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  text-align: center; /* Center the title */
+}
+
+/* Description */
+.sec-3-description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: center; /* Center the description */
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Button */
+.sec-3-button {
+  width: 80%; /* Full-width button for mobile */
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-left: 25px;
+  margin-right: auto;
+}
+
+.sec-3-imgcontainer {
+  text-align: center;
+  width: 90%;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+/* .sec-3-img {
+  width: 90%;
+  max-width: 350px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+} */
 }

@@ -7,12 +7,16 @@ import Product from "./components/Product.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 import Navbar from "./components/Navbar.jsx";
+import Success from "./components/Success.jsx";
 import ScrollToTop from './components/ScrollToTop.jsx';
 import './style/App.css';
+import Top from './components/Top.jsx';
 
 const App = () => {
+  
   return (
     <Router>
+      <Top/>
       <Navbar/>
       <div className='main'>
       <Routes>
@@ -21,6 +25,8 @@ const App = () => {
       <Route path='/services' element={<Service/>}/>
       <Route path='/product' element={<Product/>}/>
       <Route path='/contact' element={<Contact/>}/>
+      <Route path='/success' element={<Success/>}/>
+      
       </Routes>
       </div>
       <Footer/>

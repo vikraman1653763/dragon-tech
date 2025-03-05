@@ -1,25 +1,21 @@
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import React from "react";
 
-const ScrollToTop = () => {
-    const { pathname, hash } = useLocation();
+const UpButton = () => {
+  
 
-    useEffect(() => {
-        if (!hash) {  // Only scroll to top if there's no hash
-            window.scrollTo({
-                top: 0,
-                behavior: "instant",
-            });
-        } else {
-            const element = document.getElementById(hash.substring(1)); // Remove the '#' from hash
-            if (element) {
-                const top=element.getBoundingClientRect().top;
-                element.scrollIntoView({ behavior: 'smooth', block: 'start',bottom:top });
-            }
-        }
-    }, [pathname, hash]);
 
-    return null;
+    const goTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
+    return (
+        <button onClick={goTop} className="rocketbtn" >
+            <img width="24px" height="auto" src="/assets/scrollup.webp" alt="Back to top" />
+        </button>
+    );
 };
 
-export default ScrollToTop;
+export default UpButton;

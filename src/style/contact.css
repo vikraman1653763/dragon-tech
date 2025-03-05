@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     width: 99vw;
 }
 
@@ -105,7 +105,98 @@
     border-radius: 0.5rem;
     background-repeat: no-repeat;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact-sec-3 {
+        padding: 1rem;
+        height: auto; /* Adjust height dynamically */
+        width: 100vw;
+    }
 
+    .contact-sec-3-container {
+        display: flex;
+        flex-direction: row; /* Arrange form and image side by side */
+        gap: 20px;
+        width: 90%;
+        margin: 10px 20px;
+    }
+
+    .contact-sec-3-heading {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact_form {
+        width: 50%; /* Form takes up half of the width */
+    }
+
+    .contact_form label {
+        width: 100%;
+    }
+
+    .contact_form input,
+    .contact_form textarea {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .contact_form button {
+        width: 50%;
+        font-size: 1rem;
+        padding: 1rem;
+        position: relative;
+         margin-left: 300px;   
+    }
+
+    .img-com-to-xyz-a {
+        display: block; /* Show the image on tablet */
+    }
+}
+@media screen and (max-width: 768px) {
+    .contact-sec-3 {
+        padding: 0.5rem 1rem;
+        height: auto; /* Adjust height dynamically */
+        width: 100vw;
+    }
+
+    .contact-sec-3-container {
+        flex-direction: column; /* Stack form and image vertically */
+        width: 90%;
+        margin: 10px 0;
+        padding: 20px 10px;
+    }
+    .contact-sec-3-heading {
+        margin-bottom: 1.1rem;
+        font-size: var(--fs-m);
+    }
+    .contact_form {
+        width: 100%; /* Form takes full width */
+    }
+
+    .contact_form label {
+        width: 100%; /* Make labels full width */
+        font-size:0.9rem;
+    }
+
+    .contact_form input,
+    .contact_form textarea {
+        width: 100%; /* Ensure inputs take full width */
+    }
+
+    .contact_form button {
+        /* Make button full width */
+        font-size: 1rem;
+        padding: 0.7rem;
+        position: relative;
+        width:60%;
+        margin-left: 120px;
+    }
+
+    .img-com-to-xyz-a {
+        display: none; /* Hide the image on smaller screens */
+    }
+}
+
+  
 
 /* enquiry */
 
@@ -252,6 +343,69 @@ height: 5em;
     display: flex;
     justify-content: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .enquiry-card {
+        display: flex;
+        justify-content: space-between; /* Spread out the cards */
+        align-items: center;
+        gap: 20px; /* Space between the cards */
+        width: 100%; /* Make sure the container takes full width */
+    }
+    .enquiry-adv-card-bg:last-child, .enquiry-adv-card-bg:first-child {
+        transform: none;
+    }
+    
+    .enquiry-adv-card-bg {
+        width: 32%; /* Ensure three cards fit in one row */
+        margin: 0; /* No additional margin */
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: none;
+        transition: none; /* Disable transition */
+    }
+}
+@media screen and (max-width: 768px) {
+    #enquiry{
+        width: 100vw;
+        padding:10px;
+    }
+    .enquiry-card {
+        display: block; /* Stack the cards vertically */
+        align-items: center;
+        width: 90%; /* Take full width of the container */
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .enquiries-heading h3 {
+        font-size: var(--fs-xl);
+    }
+    .enquiries-heading h6 {
+        font-size:1.3rem;
+    }
+    .enquiry-adv-card-bg:last-child, .enquiry-adv-card-bg:first-child {
+        transform: none;
+    }
+    .enquiry-adv-card .content-div p {
+        font-size: var(--fs-s);
+        font-weight: 400;
+    }
+    .enquiry-image_background{
+        font-size: 0.8em;
+    }
+    .enquiry-adv-card .content-div h4 {
+        font-size: var(--fs-m);
+        font-weight: 500;
+        text-align: center;
+    }
+    .enquiry-adv-card-bg {
+        width: 90%; /* Ensure card takes up most of the container width */
+        margin: 15px auto; /* Center the cards and provide space between them */
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: none;
+        transition: none; /* Disable transition */
+    }
+}
 
 .contact_form-content {
     margin-top: 50px;
@@ -260,11 +414,9 @@ height: 5em;
     flex-direction: column;
     justify-content: center;
     gap: 48px;
-
-}
-
-
-.contact_form-right {
+  }
+  
+  .contact_form-right {
     width: 100%;
     height: max-content;
     flex: 1;
@@ -274,25 +426,25 @@ height: 5em;
     gap: 30px;
     margin-top: 25px;
     padding: 1em;
-    
-}
-
-.contact_form-right .email-right,
-.moblie-right,
-.location-right {
+  }
+  
+  .contact_form-right .email-right,
+  .contact_form-right .moblie-right,
+  .contact_form-right .location-right {
     display: flex;
     flex-flow: column nowrap;
-}
-
-.contact_form-right .email-right, .moblie-right {
+  }
+  
+  .contact_form-right .email-right,
+  .contact_form-right .moblie-right {
     width: 15%;
-}
-
-.contact_form-right .location-right {
+  }
+  
+  .contact_form-right .location-right {
     width: 35%;
-}
-
-.contact_form-right .contact_form-right_img-div {
+  }
+  
+  .contact_form-right .contact_form-right_img-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -302,31 +454,135 @@ height: 5em;
     opacity: 0.9;
     background: #9cbc6426;
     backdrop-filter: blur(15px);
-}
-
-.contact_form-right .contact_form-right_img-div img {
+  }
+  
+  .contact_form-right .contact_form-right_img-div img {
     color: black;
-    width: 2em;
-}
-
-.contact_form-right h4 {
+    width: 1.5em; /* Reduce icon size for tablet */
+  }
+  
+  .contact_form-right h4 {
     color: var(--bg-dblue);
     font-size: var(--fs-m);
     font-weight: 700;
     margin-top: 8px;
     margin-bottom: 10px;
-}
-
-.contact_form-right p {
+  }
+  
+  .contact_form-right p {
     color: var(--bg-black);
     font-size: var(--fs-s);
     font-weight: 400;
     margin-bottom: 10px;
-}
-
-.contact_form-right a {
+  }
+  
+  .contact_form-right a {
     color: var(--bg-dblue);
     font-size: var(--fs-s);
     font-weight: 400;
     text-decoration: none;
-}
+  }
+  
+  /* Media Query for Tablet (768px to 1024px) */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact_form-right {
+      flex-direction: row; /* Keep items horizontally aligned */
+      gap: 20px; /* Reduce gap between items */
+      padding: 1em; /* Adjust padding */
+      width: 100vw;
+    }
+    .email-right a{
+        margin-top: 10px;
+    }
+    .contact_form-right h4 {
+      font-size: 1.4rem; /* Reduce heading font size for tablet */
+      font-weight: 600;
+      margin-top: 6px;
+      margin-bottom: 8px;
+    }
+  
+    .contact_form-right p {
+      font-size: 0.9rem; /* Reduce font size for tablet */
+      font-weight: 400;
+      margin-bottom: 10px;
+      text-align: left; /* Left-align text */
+    }
+  
+    .contact_form-right a {
+      font-size: var(--fs-s); /* Keep font size for links */
+    }
+  
+    .contact_form-right .contact_form-right_img-div {
+      width: 40px; /* Reduce icon size */
+      height: 40px; /* Reduce icon size */
+    }
+  
+    .contact_form-right .contact_form-right_img-div img {
+      width: 1.2em; /* Reduce icon size */
+    }
+  }
+  
+  /* Media Query for Mobile (max-width: 768px) */
+  @media screen and (max-width: 767px) {
+    .contact_form-right {
+      flex-direction: column; /* Stack items vertically */
+      gap: 10px; /* Adjust gap between items */
+      align-items: center; /* Center items horizontally */
+      padding: 0.9em 0.5em; /* Adjust padding for mobile screens */
+      width: 100vw;
+      margin-top: 15px;
+    }
+  
+    .contact_form-right_img-div {
+      display: flex; /* Ensure it's a flex container */
+      justify-content: center; /* Center the content horizontally */
+      align-items: center; /* Center the content vertically */
+      width: 50px; /* Set width */
+      height: 50px; /* Set height */
+      margin: 0 auto; /* Ensure the div is centered horizontally */
+    }
+  
+    .contact_form-right h4 {
+      font-size: 1rem; /* Adjust heading size for mobile */
+      font-weight: 600;
+      margin-top: 6px;
+      margin-bottom: 8px;
+      text-align: center; /* Center the heading text */
+    }
+  
+    .contact_form-right p {
+      font-size: 0.9rem; /* Adjust font size for mobile */
+      font-weight: 400;
+      margin-bottom: 10px;
+      text-align: center; /* Center-align text */
+      width: 90vw; /* Ensure proper text width on mobile */
+    }
+  
+    .contact_form-right a {
+      font-size: var(--fs-xs); /* Adjust font size for mobile */
+      font-weight: 400;
+      text-decoration: none;
+      text-align: center; /* Center the link */
+    }
+  
+    .contact_form-right .contact_form-right_img-div {
+      width: 40px; /* Reduce icon size for mobile */
+      height: 40px; /* Reduce icon size for mobile */
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .contact_form-right .contact_form-right_img-div img {
+      width: 1.2em; /* Reduce icon size for mobile */
+    }
+  
+    .contact_form-right .email-right,
+    .contact_form-right .moblie-right,
+    .contact_form-right .location-right {
+      width: 100%; /* Ensure sections take full width */
+    }
+  
+    .contact_form-right .location-right {
+      width: 100%; /* Ensure location section takes full width */
+    }
+  }

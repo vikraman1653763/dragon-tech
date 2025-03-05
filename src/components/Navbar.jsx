@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../style/navbar.css";
+import "../style/Navbar.css";
 import { Link } from 'react-router-dom';
 import menuIcon from '/assets/menu.svg'; // Import as URL
 import closeIcon from '/assets/close.svg'; // Import as URL

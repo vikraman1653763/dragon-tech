@@ -32,7 +32,7 @@ const Section4 = () => {
           <img src="/assets/pin.svg" alt="Pin Icon" />
         </div>
         <h4>CHENNAI</h4>
-        <p>No.38, Gokul Nivas,Kumaran Nagar Extn,Kolathur, Chennai,TamilNadu.600099
+        <p>No.27, 2nd Floor, Thillai Nagar, 2nd Main Road, 200 Feet Road, Kolathur, Chennai, Tamil Nadu 600099
         </p>
         <a href="https://maps.app.goo.gl/gQsJEuFnWmznobWE6" target="_blank" rel="noopener noreferrer"
         >Get Directions</a>
